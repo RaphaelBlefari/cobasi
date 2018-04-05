@@ -28,3 +28,15 @@ footer {
     text-decoration: none;
     background-color: #00a3b4;
 }
+
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+    color: #fff;
+    background-color: #00a3b4 !important;
+}
+
+
+.input-group-text {
+    background-color: #00a3b4 !important;
+    color: white !important;
+    }
