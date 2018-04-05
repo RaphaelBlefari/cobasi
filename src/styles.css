@@ -3,6 +3,11 @@
     background-color: #00a3b4 !important;
     color:white !important;    
 }
+.bg-secundario{
+    background-color: #037c89 !important;
+    color:white !important;      
+}
+
 .ft-primario {
     color:white !important;
 }
@@ -43,4 +48,8 @@ footer {
 
 .separaFooter{
     margin-bottom: 60px !important;
+}
+
+.mini-container{
+    padding: 10px;
 }
