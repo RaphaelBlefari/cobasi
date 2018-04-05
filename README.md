@@ -1,8 +1,11 @@
 # POC Aplicação Angular
 
 ### Tecnologias<h5>
+```bash
 Angular 5.2
 Bootstrap 4
+```
+
 
 
 ## 1. Passos para começar
