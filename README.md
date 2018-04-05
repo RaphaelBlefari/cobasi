@@ -1,14 +1,19 @@
-<h1>POC Aplicação Angular</h1>
+# POC Aplicação Angular
 
-<h5>Tecnologias<h5>
-<p>
-Angular 5.2<br>
-Bootstrap 4<br>
-</p>
+### Tecnologias<h5>
+```bash
+Angular 5.2
+Bootstrap 4
+```
 
 
-<h5>Iniciando a Aplicação<h5>
-<p>
-npm install<br>
-ng serve<br>
-</p>
+
+## 1. Passos para começar
+
+### Instalando as Dependências
+
+`npm install`
+
+### Inicializando o Servidor
+
+`ng serve`
