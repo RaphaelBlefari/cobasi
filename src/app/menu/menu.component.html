@@ -1,10 +1,32 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark ft-primario bg-primario">
-  <a class="navbar-brand" [routerLink]="['']">COBASI</a>
+
+  <div class="col-sm-12 col-md-3 col-lg-2 col-xl-2">
+    <a class="navbar-brand d-flex justify-content-center" [routerLink]="['']">
+      <img src="https://www.cobasi.com.br/arquivos/2018-01-11-7w-logo-cobasi.png?v=636512657006500000" class="img-fluid" alt="Cobasi - O shopping do seu animal">
+    </a>
+  </div>
+  <div class="col-sm-12 col-md-9 col-lg-10 col-xl-10">
+    <form action="#" method="get" class="searchform navbar-form" role="search">
+      <input type="hidden" value="search" name="view">
+      <div class="input-group">
+        <input type="text" name="searchword" class="form-control" placeholder="Busca...">
+        <div class="input-group-btn">
+          <button class="btn btn-search" type="submit">
+            <i class="fas fa-search"></i>
+          </button>
+        </div>
+      </div>
+    </form>
+  </div>
+
+
+</nav>
+<nav class="navbar navbar-expand-md navbar-dark bg-dark ft-primario bg-secundario">
+
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01"
     aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
-
 
   <div class="collapse navbar-collapse" id="navbarColor01">
     <ul class="navbar-nav mr-auto">
@@ -26,14 +48,12 @@
         </div>
       </li>
     </ul>
-    
   </div>
-  
 </nav>
 
 <div class="mini-container">
   <router-outlet></router-outlet>
 </div>
 
-<!-- 
+<!--
 <app-cobasi-footer></app-cobasi-footer> -->

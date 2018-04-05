@@ -1,11 +1,11 @@
 /* Cores Padroes */
 .bg-primario{
     background-color: #00a3b4 !important;
-    color:white !important;    
+    color:white !important;
 }
 .bg-secundario{
     background-color: #037c89 !important;
-    color:white !important;      
+    color:white !important;
 }
 
 .ft-primario {
@@ -51,5 +51,15 @@ footer {
 }
 
 .mini-container{
-    padding: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+
+  }
+
+.btn-search {
+  background-color: #f9a13a !important;
+  color: white !important;
+}
+.card {
+  margin: 5px;
 }
