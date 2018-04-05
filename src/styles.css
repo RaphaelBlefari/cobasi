@@ -64,11 +64,10 @@ footer {
   background-color: #f9a13a !important;
   color: white !important;
 }
+
 .card {
   margin: 5px;
 }
-
-
 
 @media (min-width: 575px){
   .border-secundaria{
@@ -87,8 +86,9 @@ footer {
  .breadcrumb {
   background-color: orange;
   color: white;
-  border-radius: 0px 0px 100px 100px;
+  border-radius: 0px 0px 260px 260px;
   text-align: center !important;
-  height: 50px;
+  height: 40px;
+  width: 60%;
  }
 
