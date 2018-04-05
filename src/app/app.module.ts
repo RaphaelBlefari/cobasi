@@ -8,6 +8,9 @@ import { MenuComponent } from './menu/menu.component';
 import { HomeComponent } from './home/home.component';
 import { FooterComponent } from './footer/footer.component';
 import { MinhaContaComponent } from './minha-conta/minha-conta.component';
+import { UsuarioComponent } from './minha-conta/usuario/usuario.component';
+import { PedidosComponent } from './minha-conta/pedidos/pedidos.component';
+import { EnderecosComponent } from './minha-conta/enderecos/enderecos.component';
 
 
 @NgModule({
@@ -16,7 +19,10 @@ import { MinhaContaComponent } from './minha-conta/minha-conta.component';
     MenuComponent,
     HomeComponent,
     FooterComponent,
-    MinhaContaComponent
+    MinhaContaComponent,
+    UsuarioComponent,
+    PedidosComponent,
+    EnderecosComponent
   ],
   imports: [
     BrowserModule,
