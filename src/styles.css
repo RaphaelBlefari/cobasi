@@ -1,4 +1,8 @@
 /* Cores Padroes */
+body , html{
+  height: 100% !important;
+  font-family: Roboto, sans-serif !important;
+}
 .bg-primario{
     background-color: #00a3b4 !important;
     color:white !important;
@@ -12,9 +16,8 @@
     color:white !important;
 }
 
-
 @media (min-width: 992px){
-.navbar-expand-lg .navbar-nav .dropdown-menu {
+ .navbar-nav .dropdown-menu {
     margin-left: -15px;
 }
 }
@@ -51,8 +54,9 @@ footer {
 }
 
 .mini-container{
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    height: auto;
 
   }
 
@@ -62,6 +66,29 @@ footer {
 }
 .card {
   margin: 5px;
-
 }
+
+
+
+@media (min-width: 575px){
+  .border-secundaria{
+    border-right: 2px solid #037c89 !important;
+  }
+ }
+
+ @media (max-width: 574px){
+  .border-secundaria{
+    border-bottom: 2px solid #037c89 !important;
+    margin-bottom: 10px;
+    padding-bottom: 10px !important;
+  }
+ }
+
+ .breadcrumb {
+  background-color: orange;
+  color: white;
+  border-radius: 0px 0px 100px 100px;
+  text-align: center !important;
+  height: 50px;
+ }
 
