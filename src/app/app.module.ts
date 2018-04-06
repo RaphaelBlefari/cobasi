@@ -11,6 +11,7 @@ import { MinhaContaComponent } from './minha-conta/minha-conta.component';
 import { UsuarioComponent } from './minha-conta/usuario/usuario.component';
 import { PedidosComponent } from './minha-conta/pedidos/pedidos.component';
 import { EnderecosComponent } from './minha-conta/enderecos/enderecos.component';
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -26,7 +27,8 @@ import { EnderecosComponent } from './minha-conta/enderecos/enderecos.component'
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

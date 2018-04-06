@@ -1,0 +1,100 @@
+{
+    "usuarios": [
+        {
+            "id": 1,
+            "nome": "Raphael Blefari",
+            "email": "blefari_101@hotmail.com",
+            "telefone": "(11) 91111-1111"
+        },
+        {
+            "id": 2,
+            "nome": "Rodrigo Blefari",
+            "email": "blefari_101@hotmail.com",
+            "telefone": "(11) 91111-1111"
+        }
+    ],
+    "pedidos": [
+        {
+            "id": 1,
+            "usuarioId": 1,
+            "produtoId": 1,
+            "Valor": "25,50",
+            "enderecoId": 1
+        },
+        {
+            "id": 2,
+            "usuarioId": 1,
+            "produtoId": 2,
+            "Valor": "99,40",
+            "enderecoId": 2
+        }
+    ],
+    "enderecos": [
+        {
+            "id": 1,
+            "usuarioId": 1,
+            "Endereco": "Rua Marechal Pobre",
+            "Complemento": "Casa 2",
+            "Cidade": "São Paulo",
+            "CEP": "02239010"
+        },
+        {
+            "id": 2,
+            "usuarioId": 2,
+            "Endereco": "Rua Marechal Pobre",
+            "Complemento": "Casa 2",
+            "Cidade": "São Paulo",
+            "CEP": "02239010"
+        }
+    ],
+    "produtos": [
+        {
+            "id": 1,
+            "Descricao": "Ração & Cereal para cachorros grandes e filhotes.",
+            "Valor": 19.90,
+            "Img": "https://cobasi.vteximg.com.br/arquivos/ids/189718-170-170/Champ-Carne-e-Cereais.jpg?v=636397957474130000",
+            "Tipo": "1"
+        },
+        {
+            "id": 2,
+            "Descricao": "Sachê Whiskas Frango - 85g",
+            "Valor": "1,89",
+            "Img": "https://cobasi.vteximg.com.br/arquivos/ids/186938-170-170/WHISKAS-SACHE-ADULTO-MOLHO-FRANGO.jpg?v=636253415663630000",
+            "Tipo": "2"
+        },
+        {
+            "id": 3,
+            "Descricao": "Alpiste 500g Dan Real",
+            "Valor": "5,90",
+            "Img": "https://www.cobasi.com.br/arquivos/ids/178977-200-200/Alpiste-500g-Dan-Real.jpg?v=635978825489200000",
+            "Tipo": "3"
+        }
+    ],
+    "posts": [
+        {
+            "id": 1,
+            "title": "json-server",
+            "author": "typicode"
+        },
+        {
+            "id": 2,
+            "title": "json-server",
+            "author": "typicode"
+        }
+    ],
+    "comments": [
+        {
+            "id": 1,
+            "body": "some comment",
+            "postId": 1
+        },
+        {
+            "id": 3,
+            "body": "some aa",
+            "postId": 2
+        }
+    ],
+    "profile": {
+        "name": "typicode"
+    }
+}

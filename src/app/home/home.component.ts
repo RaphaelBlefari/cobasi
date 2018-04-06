@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ProdutoService } from '../servicos/produto.service';
+import { Pedido } from '../model/pedido-model';
 
 @Component({
   selector: 'app-cobasi-home',
@@ -7,9 +9,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
+  constructor(private produtoServico: ProdutoService) { }
 
   ngOnInit() {
-  }
 
+  }
 }
