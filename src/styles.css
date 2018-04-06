@@ -67,11 +67,12 @@ footer {
 
 .card {
   margin: 5px;
-  border: none;
+  
 }
 
 .card-home {
   width: 160px !important;
+  border: none;
 }
 
 .card-img-top {
@@ -94,6 +95,15 @@ footer {
     margin-bottom: 10px;
     padding-bottom: 10px !important;
   }
+
+  .card-home {
+     width:auto !important;
+}
+
+ li > .filtro-tipos {
+
+
+}
  }
 
  .breadcrumb {
@@ -147,6 +157,7 @@ footer {
     -webkit-box-shadow: 1px 1px 7px 1px #eeeeee;
     box-shadow: 8px 9px 1px -5px #ccc;
     border: 1px solid #ccc;
+    width: 120px;
  }
 
  .filtro-tipos:hover {
