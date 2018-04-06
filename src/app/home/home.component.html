@@ -1,22 +1,39 @@
 <div class="container ">
+  <br>
+
+  <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+    <li class="nav-item">
+      <a class="nav-link btn filtro-tipos active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home"
+        aria-selected="true">
+        <img height="20" src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTYuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgd2lkdGg9IjY0cHgiIGhlaWdodD0iNjRweCIgdmlld0JveD0iMCAwIDkwIDkwIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA5MCA5MDsiIHhtbDpzcGFjZT0icHJlc2VydmUiPgo8Zz4KCTxwYXRoIGlkPSJaeW5nYSIgZD0iTTY3LjA4NiwwLjM1MmMwLDAsNi4xOTctMC41ODgsMTEuMDU0LDIuNjA0YzEuNzYtMC4wODQsMy4xODIsMC42NzQsNC4xMDQsMi4zNTQgICBjMC45MjMsMS42OCwyLjU5Niw1LjcxMywxLjI1Nyw4LjE1Yy0wLjQxOCwwLjUwNC0xLjM0MS0xLjUxNC0xLjM0MS0xLjUxNHMtMC42NywyLjQzOC0xLjkyNiwzLjM2MSAgIGMwLjE2OCw1LjA0MS0xLjg0Miw4LjU2OC0yLjQyOCw5Ljc0NmMtMC4yNTIsMC42NzItMC4wODQsMS4yNjIsMC4xNjYsMS45MzRjMC4yNTIsMC42NzIsMy42MDMsMTIuNTE4LDMuNDM1LDE2LjQ2NyAgIGMtMC4xNjgsMy45NDgtMi4xNzcsOC42NTMtMy43NjksMTAuMjVjMC4zMzQsMy4yNzYtMS4xNzMsNi4wNTEtMS45MjcsNy4zOTVzLTIuNDI4LDYuMzg1LTIuODQ4LDguNzM2ICAgYy0wLjQxOSwyLjM1NC0wLjU4Niw0Ljg3NS0wLjA4Myw1LjYzMXMyLjc2MywzLjEwOSwyLjU5Niw0LjI4NWMtMC4xNjgsMS4xNzYtMi41OTYsMi41Mi0zLjc2OSwyLjUyICAgYy0xLjE3MiwwLTMuNjAzLTAuNzU2LTQuMTg4LTIuMzU0Yy0wLjU4NS0xLjU5Ny0wLjY3LTQuMzY3LTAuMjUtNS45NjNjMC40MTgtMS41OTksMy4yNjctMTMuMjc1LDEuNTkzLTIwLjE2NiAgIGMtNC4xMDQsMS44NDgtMTAuOTcyLDEuNzY2LTEwLjk3MiwxLjc2NnMtMS4xNzIsNi4xMzMtMi41OTYsOS42NmMtMC41MDIsMC44NC0wLjQxOSw2LjU1NS0wLjQxOSwxMC4xNjYgICBjMCwzLjYxMywxLjI1Niw5LjI0MiwxLjI1Niw5LjI0MnMxLjc1OSwxLjI2MiwxLjUwOCwyLjg1NkM1Ny4yOSw4OS4wNzYsNTUuMjc4LDkwLDUzLjUyLDkwYy0xLjc1OCwwLTQuMTAzLTEuMzQ0LTQuMTAzLTMuNTI5ICAgYzAtMi4xODQsMC4zMzMtNy4xNDEsMC4xNjYtMTAuNzU0Yy0wLjE2Ni0zLjYxMy0wLjA4Mi01Ljk2NS0wLjY2OS04LjIzNGMtMC41ODctMi4yNjktMi4yNjEtOC4yMzMtMi40MjktMTIuODU0ICAgYy0wLjU4NiwwLTEuMTcyLTAuNDItMS4xNzItMC40MnMtMi43NjQsMy4xOTItNC42ODksNS4wNDFjMC4yNTEsMS4yNiwwLjkyLDMuNTI4LDAuOTIsNC4wMzNjMCwwLjUwNCwwLjUwNCwwLjkyNCwxLjM0MSwxLjI2ICAgYzAuODM3LDAuMzM4LDMuNDMyLDEuNzY2LDMuMzQ5LDMuMTkyYy0wLjA4NCwxLjQyOS0zLjM1LDEuNjgxLTYuMTk3LDAuNDIxYy0wLjY2OS0wLjMzNy0zLjA5OC04LjQ4NC0zLjQzMy05LjU3OCAgIGMtMC4zMzYtMS4wOTMtMC41ODctMS42ODEtMC4xNjctMi42MDVjMC40MTgtMC45MjIsMS41OTEtMy45NDcsMS40MjQtNS43MTNjLTAuMTY4LTEuNzY0LTMuNDM0LTQuNTM3LTUuNjExLTQuNTM3ICAgYy0xLjY3NSwwLTQuMjM0LDIuNTY4LTYuMTEzLDQuMDMzYy0yLjI2MSwxLjc2Ni00Ljg1Niw0LjQ1My01LjUyNiw0Ljg3M2MtMC42NzEsMC40MjItNS45NDYsMTAtNi45NTEsMTIuNzcxICAgYy0wLjQxOCwxLjA5My0xLjI1NSw2LjU1Ni01LjY5Miw2LjM4NmMtMi4wMS0wLjE2OC0zLjg1My0yLjM1MywxLjg0Mi02LjMwMmMxLjQ0NS0zLjM0LDMuNDU1LTYuODA3LDMuNTgtNy41ICAgYzAuMTI1LTAuNjkyLDEuNjMzLTkuMzI1LDQuMTQ2LTE3LjUxOGMyLjUxMi04LjE5MSw2LjIxOC0xMi4wOTgsNi45MDctMTIuNjY2YzAuNTY2LTAuNDM5LDAuODgtMC42OTMsMC4zMTQtMS4wMDggICBjLTAuNTY0LTAuMzE0LTYuNTMxLTUuNDItNS40LTE2LjI1OGMwLjE4OC0xLjI2LDAuNzU0LTAuOTQ1LDEuMTMsMS45NTNjMC4zNzcsMi44OTgsMi43LDkuNzA1LDcuODUxLDExLjg0OCAgIGMwLjUwMiwwLjE4OCw0LjIwOC0yLjY0NiwyMy4xMTEtNC4wMzNjMC4xMjYtMy4zNCwwLjYyOS02Ljg2OSwwLjYyOS02Ljg2OXMtMS4zMTgtMS4wMDgtMS41MDgtMy4wMjUgICBjLTAuNjI4LDEuMDEtMS4wMDQsMS4yNjItMS44MjEsMS4xMzVjLTAuODE1LTAuMTI1LTAuNzU0LTQuMDMxLTAuNTY0LTYuODA1YzAuMTg5LTIuNzczLDMuMzkyLTMuOTcxLDQuNTg2LTQuMDk2ICAgYzEuNTY4LTAuODIsMy4yNjUtMC42OTMsMy4yNjUtMC42OTNTNTguOTIxLTAuOTkyLDY3LjA4NiwwLjM1MnoiIGZpbGw9IiMwMDAwMDAiLz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8L3N2Zz4K"
+        /> Cachorro</a>
+
+    </li>
+    <li class="nav-item">
+      <a class="nav-link btn filtro-tipos" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile"
+        aria-selected="false">
+        <img height="20" src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTYuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgd2lkdGg9IjY0cHgiIGhlaWdodD0iNjRweCIgdmlld0JveD0iMCAwIDIzNi42MiAyMzYuNjIiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDIzNi42MiAyMzYuNjI7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4KPGc+Cgk8Zz4KCQk8cGF0aCBkPSJNMTk3LjAyMywyMjUuNTQ1Yy0xLjE0NS05LjUzMy0xMS42OC0xMC42MTQtMTcuODA1LTkuOTU4Yy02LjUyMS0yNC41NTQsMTYuMjI1LTYxLjE1MSwxNy41NjMtNjkuODIgICAgYzEuNDM4LTkuMzEyLTYuNjU4LTYzLjUtNy41MTMtOTAuOTM4QzE4OC4zODksMjYuNjYyLDE0Ny40OC00LjQzMywxNDAuNjUsMC41MjRjLTYuNzY4LDcuNDg0LDkuNzQ4LDE3LjU4NSwxLjA1NCwyNi4yNDUgICAgYy04LjM5OCw4LjM2Ny0xMC41ODgsMTMuOTktMTYuODI0LDIzLjQ2Yy0xNS45NzYsMjQuMjU1LDI3LjMxOCwyNC41NTgsMjcuMzE4LDI0LjU1OHMtMzMuODgyLDI1LjExMi00MS40MjEsMzcuNzY4ICAgIGMtNi45NDMsMTEuNjU2LTkuODU0LDI0LjY5Ni0xOC4yMzIsMzUuNjg4Yy0xOS4wOTQsMjUuMDUxLTE0Ljc5MSw2OC43MjktMTQuNzkxLDY4LjcyOXMtMzYuMTctMTEuODM5LTE2LjI2NC01My4xMzMgICAgQzc2LjY0MywxMzIuNDA2LDg0LjEwNyw4Ni4wMiw1MC4wMTYsOTcuOTVjLTEzLjE4OSw0LjYxNiwyLjk0OSwxNC4zMjUsNS43MzQsMTcuNDM1YzkuMzE4LDEwLjQsMS40NDEsMjcuODk2LTQuMTc0LDM4LjAxMiAgICBjLTE1LjAzNywyNy4wOTEtMjAuNDk2LDU1LjQ3NSwxMS4xNTQsNzIuOTc4YzE0LjA2Myw3Ljc3NiwzMy4wNTUsOS43LDUyLjE3LDkuOTgybDQ4LjY0LDAuMTQgICAgQzE3OS41NjQsMjM3LjI5NCwxOTcuNjg5LDIzNC4yOTgsMTk3LjAyMywyMjUuNTQ1eiIgZmlsbD0iIzAwMDAwMCIvPgoJPC9nPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+Cjwvc3ZnPgo="
+        /> Gato</a>
+    </li>
+    <li class="nav-item ">
+      <a class="nav-link btn filtro-tipos aves" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact"
+        aria-selected="false">
+        <img height="20" src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTcuMS4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDM1OC41NzQgMzU4LjU3NCIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgMzU4LjU3NCAzNTguNTc0OyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgd2lkdGg9IjY0cHgiIGhlaWdodD0iNjRweCI+CjxwYXRoIGQ9Ik0zNDkuMzkyLDE4OC4yNWMtMi40MjYtMC44MjEtOC45NDctMy40NTMtMTAuNzM4LTYuMDE3Yy0wLjI4NS0wLjQwNy0wLjcyOC0xLjI4NC0xLjI4OS0yLjM5NCAgYy0zLjI5Ni02LjUyNC0xMS4wMTYtMjEuODAyLTI2LjYwNS0yMS44MDJjLTIuNDUxLDAtNS4wMjEsMC4zODctNy42NCwxLjE1MWMtMTQuNjU1LDQuMjc2LTIxLjY4OCwxMy45OTgtMjYuODIyLDIxLjA5NiAgYy0yLjk1Nyw0LjA4OC01LjI5Myw3LjMxNy03LjkyNCw3LjgyMmMtMC44MjgsMC4xNTktMS42MDQsMC4yMzktMi4zMDgsMC4yMzljLTIuNTEsMC0zLjkxNi0wLjk1NC00LjE3OS0yLjgzNiAgYy0wLjk4OC03LjA2OS0wLjc2Mi0xNS44ODQtMC41MjMtMjUuMjE3YzAuMzk1LTE1LjQzOSwwLjg0Mi0zMi45MzgtNC4yOTEtNDYuNjY3Yy04LjM2OC0yMi4zODQtMjcuMDUtNDAuNDE3LTQyLjA2Mi01NC45MDYgIGMtMy43NTEtMy42MjEtNy4yOTQtNy4wNDEtMTAuMzMyLTEwLjE4NWMtMS4xNjctMS40NDEtMi4zOC0yLjc1Mi0zLjU1My00LjAyMWMtMS43MDMtMS44NDEtMy4zMTItMy41OC00LjQ4Ni01LjQxMSAgYy01LjAzOC03Ljg1NC04LjU2Ny0xNi43NjQtMTEuNjE3LTI1LjE4Yy0wLjI4OS0wLjkyMS0wLjU3Ni0xLjg1LTAuODYtMi43ODhjLTAuNDU2LTEuNTAzLTAuOTU4LTIuNjQ5LTEuNTMzLTMuNDk5ICBDMTgwLjk2OSwzLjY1NywxNzkuMDEyLDAsMTc1Ljk5MiwwYy0wLjQ3MSwwLTAuOTU1LDAuMDkyLTEuNDM2LDAuMjc0Yy01LjE5MywxLjk2NC02LjMzMywxMi43MzMtNy4zNCwyMi4yMzUgIGMtMC41MTcsNC44OC0xLjAwNSw5LjQ5LTEuOTU2LDExLjc1NWMtMS4yMjgsMi45MjUtMy4xMzIsNC42NTUtNS4xNDgsNi40ODVjLTIuMzg0LDIuMTY1LTQuODQ5LDQuNDAzLTYuMDAzLDguNjI1ICBjLTEuMTU0LDQuMjE4LDAuMDAyLDYuNjQ2LDEuMTIxLDguOTkzYzAuOTQxLDEuOTc3LDEuODMxLDMuODQzLDEuMzQ3LDYuOTU1Yy0wLjUwNywzLjI2Ni0yLjA4Miw1LjAzLTMuNzQ5LDYuODk5ICBjLTEuNzc3LDEuOTkyLTMuNjE2LDQuMDUyLTMuOTI5LDcuODIxYy0wLjMyNCwzLjg5MiwxLjcyMyw2LjQxOSwzLjcwMyw4Ljg2NGMxLjczMSwyLjEzNywzLjM2Niw0LjE1NiwzLjMyNiw3LjAyOCAgYy0wLjAzNCwyLjQzNy0xLjQ3OCwzLjY1LTMuMzA1LDUuMTg2Yy0yLjM5NCwyLjAxMS01LjM3Myw0LjUxNC00LjM5NiwxMC41MzhjMC42NDYsMy45OCwzLjI3NCw2LjA1OCw1LjU5Myw3Ljg5MSAgYzIuMjMsMS43NjMsMy41OTMsMi45NDYsMy40OTQsNC45NTdjLTAuMDc1LDEuNTI5LTAuNTQ2LDMuMTYzLTEuMDQ0LDQuODkyYy0xLjE5LDQuMTI4LTIuNTM5LDguODA3LDAuOTUyLDEzLjkzNSAgYzEuMjU4LDEuODQ4LDUuNDQ2LDUuNTUzLDEwLjA5OCw5LjM0NmMtMTIuNzcyLTUuODUtMzEuNzQxLTEzLjIzNC01MS41NzctMTYuMzQ3Yy0zMi41MzctNS4xMDUtNjQuMDkyLTE3LjcyNi04MS4wNDUtMjQuNTA3ICBjLTcuOTgtMy4xOTItMTEuNTY5LTQuNjA0LTEyLjk4NC00LjYwNGMtMC45MTcsMC0xLjIxOSwwLjU2My0xLjMwNywwLjgwNmMtMC4zMzcsMC45MzMsMC40NzIsMS44MTEsMi40MTQsMy40MjRsNS4yMjQsNC4zMzUgIGM3LjAwNyw1LjgxLDEyLjUwNiwxMC4zNjksMTQuODQzLDEyLjY2M2MtMS4xNDItMC40MDYtMi43NzctMS4wNzItNC44OTYtMS45OTJjLTEuMTE5LTAuNDg2LTIuMDE4LTAuMjk0LTIuNTE1LDAuNDMxICBjLTAuMjM5LDAuMzQ5LTAuMzU1LDAuNzktMC4zNTUsMS4zNDdjMCw2LjE4NCwxNy44MDksMzYuNTk1LDQyLjQxMSw2NS45MzhjMTcuNzU2LDIxLjE3Niw1MS44NjksNTYuNzAyLDgwLjg0MSw1Ni43MDIgIGMxLjcyOSwwLDMuNDMtMC4xMjcsNS4wODUtMC4zNzljLTExLjUyMSwxMS45Mi01My40LDQzLjMyOS05MC41MzEsNTguNzQxYy00NC44NjgsMTguNjI0LTY1LjEyMywyOC4xOTQtNjYuNTQsMzUuNjcgIGMtMC4zMjIsMS42OTksMC4yNjYsMy4yODcsMS43NDgsNC43MTljMS45NzMsMS45MDYsMy44MTQsMi43OTMsNS43OTUsMi43OTNjMS4zOTgsMCwyLjY4MS0wLjQ0NywzLjkyMS0wLjg3OSAgYzEuMjctMC40NDIsMi41ODMtMC45LDQuMDY5LTAuOWMxLjY2LDAsMy4zODQsMC41ODEsNS4yNjksMS43NzVjNC43MDUsMi45NzksMTAuMzU1LDYuMTU5LDE3Ljg5Niw2LjE1OSAgYzcuODU2LDAsMTYuNTI0LTMuNDM3LDI2LjUtMTAuNTA3YzEuODY5LTEuMzI0LDMuNTY0LTEuOTE1LDUuNDk5LTEuOTE1YzEuMDkyLDAsMi4xNjMsMC4xODIsMy4yOTUsMC4zNzQgIGMxLjIzNCwwLjIwOSwyLjUxMSwwLjQyNiwzLjkyMywwLjQyNmMwLDAsMCwwLDAsMGMzLjIxMSwwLDYuMjY3LTEuMTk1LDkuNjE0LTMuNzYxYzI0LjY5Ny0xOC45Myw1MS42MjktMjIuNDc0LDgwLjE0NC0yNi4yMjcgIGMzMy42MzYtNC40MjcsNjguNDE3LTkuMDA0LDEwNS44MjEtMzcuNzcxYzMxLjgzMy0yNC40ODEsMzguMTE1LTQ1LjUwMyw0Mi4yNzMtNTkuNDE1YzAuNDM4LTEuNDY1LDAuODUtMi44NDYsMS4yNjYtNC4xMzUgIGM0LjE2NS0xMi45MSw2LjYwNy0xNS45MjYsOS42NTctMTYuOTc1YzIuMDIzLTAuNjk2LDcuMDMxLTIuNzE5LDExLjQ1LTQuNTAzYzMuMTA5LTEuMjU1LDUuNzk1LTIuMzQsNi41MzktMi41OTYgIGMxLjA5Ny0wLjM3NywxLjIyNy0xLjA0OSwxLjIwNy0xLjQxN0MzNTIuMjUyLDE4OS43NzYsMzUyLjIwNCwxODguODk3LDM0OS4zOTIsMTg4LjI1eiIgZmlsbD0iIzAwMDAwMCIvPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8L3N2Zz4K"
+        /> Aves</a>
+    </li>
+  </ul>
+
   <div class="row">
     <div class="col-6 col-sm-4 col-md-3 col-lg-3 col-xl-2">
       <div class="card card-home">
         <img class="card-img-top img-fluid" src="https://cobasi.vteximg.com.br/arquivos/ids/189718-170-170/Champ-Carne-e-Cereais.jpg?v=636397957474130000"
           alt="Card image cap">
         <div class="card-body">
-          <h6 class=" descricao-prod text-center">
+          <h6 class="descricao-prod text-center">
             Ração & Cereal para cachorros grandes e filhotes.</h6>
-          <h4 class="text-center">
+          <h4 class="text-center valor_produto">
             R$ 19.90
           </h4>
-          <a href="#" class="btn btn-success float-left">
-            <i class="fas fa-cart-plus"></i>
-          </a>
-          <a href="#" class="btn btn-primary float-right">
-            <i class="fas fa-eye"></i>
-          </a>
-
         </div>
       </div>
     </div>
@@ -27,15 +44,15 @@
         <div class="card-body">
           <h6 class=" descricao-prod text-center">
             Ração & Cereal para cachorros grandes e filhotes.</h6>
-          <h4 class="text-center">
+          <h4 class="text-center valor_produto">
             R$ 19.90
           </h4>
-          <a href="#" class="btn btn-success float-left">
-            <i class="fas fa-cart-plus"></i>
-          </a>
-          <a href="#" class="btn btn-primary float-right">
-            <i class="fas fa-eye"></i>
-          </a>
+
+
+
+
+
+
 
         </div>
       </div>
@@ -49,15 +66,15 @@
         <div class="card-body">
           <h6 class=" descricao-prod text-center">
             Ração & Cereal para cachorros grandes e filhotes.</h6>
-          <h4 class="text-center">
+          <h4 class="text-center valor_produto">
             R$ 19.90
           </h4>
-          <a href="#" class="btn btn-success float-left">
-            <i class="fas fa-cart-plus"></i>
-          </a>
-          <a href="#" class="btn btn-primary float-right">
-            <i class="fas fa-eye"></i>
-          </a>
+
+
+
+
+
+
 
         </div>
       </div>
@@ -71,15 +88,30 @@
         <div class="card-body">
           <h6 class=" descricao-prod text-center">
             Ração & Cereal para cachorros grandes e filhotes.</h6>
-          <h4 class="text-center">
+          <h4 class="text-center valor_produto">
             R$ 19.90
           </h4>
-          <a href="#" class="btn btn-success float-left">
-            <i class="fas fa-cart-plus"></i>
-          </a>
-          <a href="#" class="btn btn-primary float-right">
-            <i class="fas fa-eye"></i>
-          </a>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="col-6 col-sm-4 col-md-3 col-lg-3 col-xl-2">
+      <div class="card card-home">
+        <img class="card-img-top img-fluid" src="https://cobasi.vteximg.com.br/arquivos/ids/189718-170-170/Champ-Carne-e-Cereais.jpg?v=636397957474130000"
+          alt="Card image cap">
+        <div class="card-body">
+          <h6 class=" descricao-prod text-center">
+            Ração & Cereal para cachorros grandes e filhotes.</h6>
+          <h4 class="text-center valor_produto">
+            R$ 19.90
+          </h4>
+
+
+
+
+
+
 
         </div>
       </div>
@@ -93,15 +125,57 @@
         <div class="card-body">
           <h6 class=" descricao-prod text-center">
             Ração & Cereal para cachorros grandes e filhotes.</h6>
-          <h4 class="text-center">
+          <h4 class="text-center valor_produto">
             R$ 19.90
           </h4>
-          <a href="#" class="btn btn-success float-left">
-            <i class="fas fa-cart-plus"></i>
-          </a>
-          <a href="#" class="btn btn-primary float-right">
-            <i class="fas fa-eye"></i>
-          </a>
+
+
+
+
+
+
+
+        </div>
+      </div>
+    </div>
+
+    <div class="col-6 col-sm-4 col-md-3 col-lg-3 col-xl-2">
+      <div class="card card-home">
+        <img class="card-img-top img-fluid" src="https://cobasi.vteximg.com.br/arquivos/ids/189718-170-170/Champ-Carne-e-Cereais.jpg?v=636397957474130000"
+          alt="Card image cap">
+        <div class="card-body">
+          <h6 class=" descricao-prod text-center">
+            Ração & Cereal para cachorros grandes e filhotes.</h6>
+          <h4 class="text-center valor_produto">
+            R$ 19.90
+          </h4>
+
+
+
+
+
+
+
+        </div>
+      </div>
+    </div>
+
+    <div class="col-6 col-sm-4 col-md-3 col-lg-3 col-xl-2">
+      <div class="card card-home">
+        <img class="card-img-top img-fluid" src="https://cobasi.vteximg.com.br/arquivos/ids/189718-170-170/Champ-Carne-e-Cereais.jpg?v=636397957474130000"
+          alt="Card image cap">
+        <div class="card-body">
+          <h6 class=" descricao-prod text-center">
+            Ração & Cereal para cachorros grandes e filhotes.</h6>
+          <h4 class="text-center valor_produto">
+            R$ 19.90
+          </h4>
+
+
+
+
+
+
 
         </div>
       </div>
@@ -115,57 +189,15 @@
         <div class="card-body">
           <h6 class=" descricao-prod text-center">
             Ração & Cereal para cachorros grandes e filhotes.</h6>
-          <h4 class="text-center">
+          <h4 class="text-center valor_produto">
             R$ 19.90
           </h4>
-          <a href="#" class="btn btn-success float-left">
-            <i class="fas fa-cart-plus"></i>
-          </a>
-          <a href="#" class="btn btn-primary float-right">
-            <i class="fas fa-eye"></i>
-          </a>
 
-        </div>
-      </div>
-    </div>
 
-    <div class="col-6 col-sm-4 col-md-3 col-lg-3 col-xl-2">
-      <div class="card card-home">
-        <img class="card-img-top img-fluid" src="https://cobasi.vteximg.com.br/arquivos/ids/189718-170-170/Champ-Carne-e-Cereais.jpg?v=636397957474130000"
-          alt="Card image cap">
-        <div class="card-body">
-          <h6 class=" descricao-prod text-center">
-            Ração & Cereal para cachorros grandes e filhotes.</h6>
-          <h4 class="text-center">
-            R$ 19.90
-          </h4>
-          <a href="#" class="btn btn-success float-left">
-            <i class="fas fa-cart-plus"></i>
-          </a>
-          <a href="#" class="btn btn-primary float-right">
-            <i class="fas fa-eye"></i>
-          </a>
 
-        </div>
-      </div>
-    </div>
 
-    <div class="col-6 col-sm-4 col-md-3 col-lg-3 col-xl-2">
-      <div class="card card-home">
-        <img class="card-img-top img-fluid" src="https://cobasi.vteximg.com.br/arquivos/ids/189718-170-170/Champ-Carne-e-Cereais.jpg?v=636397957474130000"
-          alt="Card image cap">
-        <div class="card-body">
-          <h6 class=" descricao-prod text-center">
-            Ração & Cereal para cachorros grandes e filhotes.</h6>
-          <h4 class="text-center">
-            R$ 19.90
-          </h4>
-          <a href="#" class="btn btn-success float-left">
-            <i class="fas fa-cart-plus"></i>
-          </a>
-          <a href="#" class="btn btn-primary float-right">
-            <i class="fas fa-eye"></i>
-          </a>
+
+
 
         </div>
       </div>
@@ -179,15 +211,15 @@
         <div class="card-body">
           <h6 class=" descricao-prod text-center">
             Ração & Cereal para cachorros grandes e filhotes.</h6>
-          <h4 class="text-center">
+          <h4 class="text-center valor_produto">
             R$ 19.90
           </h4>
-          <a href="#" class="btn btn-success float-left">
-            <i class="fas fa-cart-plus"></i>
-          </a>
-          <a href="#" class="btn btn-primary float-right">
-            <i class="fas fa-eye"></i>
-          </a>
+
+
+
+
+
+
 
         </div>
       </div>
@@ -201,15 +233,15 @@
         <div class="card-body">
           <h6 class=" descricao-prod text-center">
             Ração & Cereal para cachorros grandes e filhotes.</h6>
-          <h4 class="text-center">
+          <h4 class="text-center valor_produto">
             R$ 19.90
           </h4>
-          <a href="#" class="btn btn-success float-left">
-            <i class="fas fa-cart-plus"></i>
-          </a>
-          <a href="#" class="btn btn-primary float-right">
-            <i class="fas fa-eye"></i>
-          </a>
+
+
+
+
+
+
 
         </div>
       </div>
@@ -223,37 +255,15 @@
         <div class="card-body">
           <h6 class=" descricao-prod text-center">
             Ração & Cereal para cachorros grandes e filhotes.</h6>
-          <h4 class="text-center">
+          <h4 class="text-center valor_produto">
             R$ 19.90
           </h4>
-          <a href="#" class="btn btn-success float-left">
-            <i class="fas fa-cart-plus"></i>
-          </a>
-          <a href="#" class="btn btn-primary float-right">
-            <i class="fas fa-eye"></i>
-          </a>
-
-        </div>
-      </div>
-    </div>
 
 
-    <div class="col-6 col-sm-4 col-md-3 col-lg-3 col-xl-2">
-      <div class="card card-home">
-        <img class="card-img-top img-fluid" src="https://cobasi.vteximg.com.br/arquivos/ids/189718-170-170/Champ-Carne-e-Cereais.jpg?v=636397957474130000"
-          alt="Card image cap">
-        <div class="card-body">
-          <h6 class=" descricao-prod text-center">
-            Ração & Cereal para cachorros grandes e filhotes.</h6>
-          <h4 class="text-center">
-            R$ 19.90
-          </h4>
-          <a href="#" class="btn btn-success float-left">
-            <i class="fas fa-cart-plus"></i>
-          </a>
-          <a href="#" class="btn btn-primary float-right">
-            <i class="fas fa-eye"></i>
-          </a>
+
+
+
+
 
         </div>
       </div>
